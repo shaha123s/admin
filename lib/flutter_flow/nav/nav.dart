@@ -101,6 +101,23 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: UsersmanagWidget.routePath,
           builder: (context, params) => UsersmanagWidget(),
         ),
+        FFRoute(
+          name: WalletWidget.routeName,
+          path: WalletWidget.routePath,
+          builder: (context, params) => WalletWidget(
+            userid: params.getParam<String>('heightRowId', ParamType.String),
+          ),
+        ),
+        FFRoute(
+          name: ProfileWidget.routeName,
+          path: ProfileWidget.routePath,
+          builder: (context, params) => ProfileWidget(
+            userID: params.getParam(
+              'userID',
+              ParamType.String,
+            ),
+          ),
+        )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 
