@@ -117,6 +117,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.String,
             ),
           ),
+        ),
+        FFRoute(
+          name: TransWidget.routeName,
+          path: TransWidget.routePath,
+          builder: (context, params) => TransWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
