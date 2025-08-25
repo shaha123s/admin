@@ -32,9 +32,6 @@ class UsersRow extends SupabaseDataRow {
   String get status => getField<String>('status')!;
   set status(String value) => setField<String>('status', value);
 
-  String? get managerId => getField<String>('manager_id');
-  set managerId(String? value) => setField<String>('manager_id', value);
-
   DateTime get createdAt => getField<DateTime>('created_at')!;
   set createdAt(DateTime value) => setField<DateTime>('created_at', value);
 
