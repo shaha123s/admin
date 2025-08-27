@@ -113,200 +113,217 @@ class _AdduserrWidgetState extends State<AdduserrWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .headlineLarge
                                     .override(
-                                      font: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
+                                      fontFamily: 'Lateef',
+                                      color: Color(0xFF4A4A4A),
+                                      fontSize: 50.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                              ),
+                            ),
+                            Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 50.0, 0.0, 30.0),
+                                child: FFButtonWidget(
+                                  onPressed: () async {
+                                    context.pushNamed(HomePageWidget.routeName);
+                                  },
+                                  text: 'الرئيسية',
+                                  icon: Icon(
+                                    Icons.home_rounded,
+                                    size: 30.0,
+                                  ),
+                                  options: FFButtonOptions(
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.2,
+                                    height: MediaQuery.sizeOf(context).height *
+                                        0.08,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 0.0, 16.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 60.0, 0.0),
+                                    color: Color(0xFFD7DFF2),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          font: GoogleFonts.interTight(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontStyle,
+                                          ),
+                                          color: Color(0xFF5E3E7E),
+                                          fontSize: 20.0,
+                                          letterSpacing: 0.0,
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
+                                    elevation: 0.0,
+                                    borderRadius: BorderRadius.circular(12.0),
+                                    hoverColor: Color(0xFFF4EDF6),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 20.0, 0.0, 30.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  context.pushNamed(UsersmanagWidget.routeName);
+                                },
+                                text: 'إدارة المستخدمين',
+                                icon: Icon(
+                                  Icons.person_add_alt,
+                                  size: 30.0,
+                                ),
+                                options: FFButtonOptions(
+                                  width: MediaQuery.sizeOf(context).width * 0.2,
+                                  height:
+                                      MediaQuery.sizeOf(context).height * 0.08,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 16.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 20.0, 0.0),
+                                  color: FlutterFlowTheme.of(context).info,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.interTight(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: Color(0xFF5E3E7E),
+                                        fontSize: 20.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
                                         fontStyle: FlutterFlowTheme.of(context)
-                                            .headlineLarge
+                                            .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF4A4A4A),
-                                      fontSize: 36.0,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .headlineLarge
-                                          .fontStyle,
-                                    ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 60.0, 0.0, 0.0),
-                              child: Container(
-                                width: MediaQuery.sizeOf(context).width * 0.2,
-                                height:
-                                    MediaQuery.sizeOf(context).height * 0.08,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 0.0, 0.0, 0.0),
-                                      child: Icon(
-                                        Icons.home,
-                                        color: Color(0xFF542B8B),
-                                        size: 30.0,
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            50.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          'الرئيسية',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Mirza',
-                                                color: Color(0xFF5E3E7E),
-                                                fontSize: 30.0,
-                                                letterSpacing: 0.0,
-                                              ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                                  elevation: 0.0,
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  hoverColor: Color(0xFFF4EDF6),
                                 ),
                               ),
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 40.0, 0.0, 0.0),
-                              child: Container(
-                                width: MediaQuery.sizeOf(context).width * 0.2,
-                                height:
-                                    MediaQuery.sizeOf(context).height * 0.08,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(20.0),
+                                  0.0, 20.0, 0.0, 30.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  context.pushNamed(WalletWidget.routeName);
+                                },
+                                text: 'المحفظة',
+                                icon: Icon(
+                                  Icons.wallet,
+                                  size: 30.0,
                                 ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 0.0, 0.0, 0.0),
-                                      child: Icon(
-                                        Icons.person_add_sharp,
-                                        color: Color(0xFF542B8B),
-                                        size: 30.0,
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          'إدارة المستخدمين',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Mirza',
-                                                color: Color(0xFF5E3E7E),
-                                                fontSize: 30.0,
-                                                letterSpacing: 0.0,
-                                              ),
+                                options: FFButtonOptions(
+                                  width: MediaQuery.sizeOf(context).width * 0.2,
+                                  height:
+                                      MediaQuery.sizeOf(context).height * 0.08,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 60.0, 0.0),
+                                  color: Color(0xFFD7DFF2),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.interTight(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
                                         ),
+                                        color: Color(0xFF5E3E7E),
+                                        fontSize: 20.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 40.0, 0.0, 0.0),
-                              child: Container(
-                                width: MediaQuery.sizeOf(context).width * 0.2,
-                                height:
-                                    MediaQuery.sizeOf(context).height * 0.08,
-                                decoration: BoxDecoration(),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 0.0, 0.0, 0.0),
-                                      child: Icon(
-                                        Icons.wallet_sharp,
-                                        color: Color(0xFF542B8B),
-                                        size: 30.0,
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            50.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          'المحفظة',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Mirza',
-                                                color: Color(0xFF5E3E7E),
-                                                fontSize: 30.0,
-                                                letterSpacing: 0.0,
-                                              ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                                  elevation: 0.0,
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  hoverColor: Color(0xFFF4EDF6),
                                 ),
                               ),
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 40.0, 0.0, 0.0),
-                              child: Container(
-                                width: MediaQuery.sizeOf(context).width * 0.2,
-                                height:
-                                    MediaQuery.sizeOf(context).height * 0.08,
-                                decoration: BoxDecoration(),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 0.0, 0.0, 0.0),
-                                      child: Icon(
-                                        Icons.settings_sharp,
-                                        color: Color(0xFF542B8B),
-                                        size: 30.0,
-                                      ),
-                                    ),
-                                    Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            50.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          'الاعدادات',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Mirza',
-                                                color: Color(0xFF5E3E7E),
-                                                fontSize: 30.0,
-                                                letterSpacing: 0.0,
-                                              ),
+                                  0.0, 20.0, 0.0, 30.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  context.pushNamed(TransWidget.routeName);
+                                },
+                                text: 'التحويلات',
+                                icon: Icon(
+                                  Icons.monetization_on_rounded,
+                                  size: 30.0,
+                                ),
+                                options: FFButtonOptions(
+                                  width: MediaQuery.sizeOf(context).width * 0.2,
+                                  height:
+                                      MediaQuery.sizeOf(context).height * 0.08,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 16.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 60.0, 0.0),
+                                  color: Color(0xFFD7DFF2),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.interTight(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
                                         ),
+                                        color: Color(0xFF5E3E7E),
+                                        fontSize: 20.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
                                       ),
-                                    ),
-                                  ],
+                                  elevation: 0.0,
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  hoverColor: Color(0xFFF4EDF6),
                                 ),
                               ),
                             ),
@@ -338,29 +355,16 @@ class _AdduserrWidgetState extends State<AdduserrWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 40.0, 40.0),
                                 child: Text(
-                                  'اضافة مستخدم',
+                                  'Add user',
                                   textAlign: TextAlign.start,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.roboto(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                        fontSize: 35.0,
+                                        fontFamily: 'PlaywriteUSTrad',
+                                        color: Color(0xFF4A4A4A),
+                                        fontSize: 40.0,
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
+                                        fontWeight: FontWeight.w600,
                                       ),
                                 ),
                               ),
@@ -1612,6 +1616,11 @@ class _AdduserrWidgetState extends State<AdduserrWidget> {
                                   0.0, 50.0, 0.0, 0.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
+                                  if (_model.formKey.currentState == null ||
+                                      !_model.formKey.currentState!
+                                          .validate()) {
+                                    return;
+                                  }
                                   GoRouter.of(context).prepareAuthEvent();
                                   if (_model.passwordTextController.text !=
                                       _model
@@ -1645,11 +1654,10 @@ class _AdduserrWidgetState extends State<AdduserrWidget> {
                                     'password_hash':
                                         _model.passwordTextController.text,
                                   });
-                                  if (_model.formKey.currentState == null ||
-                                      !_model.formKey.currentState!
-                                          .validate()) {
-                                    return;
-                                  }
+
+                                  context.pushNamedAuth(
+                                      UsersmanagWidget.routeName,
+                                      context.mounted);
 
                                   await WalletsTable().insert({
                                     'user_id': currentUserUid,

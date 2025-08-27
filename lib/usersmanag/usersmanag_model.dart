@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/components/switchh_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -23,13 +24,23 @@ class UsersmanagModel extends FlutterFlowModel<UsersmanagWidget> {
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
+  // Models for switchh dynamic component.
+  late FlutterFlowDynamicModels<SwitchhModel> switchhModels1;
+  // Models for switchh dynamic component.
+  late FlutterFlowDynamicModels<SwitchhModel> switchhModels2;
 
   @override
-  void initState(BuildContext context) {}
+  void initState(BuildContext context) {
+    switchhModels1 = FlutterFlowDynamicModels(() => SwitchhModel());
+    switchhModels2 = FlutterFlowDynamicModels(() => SwitchhModel());
+  }
 
   @override
   void dispose() {
     textFieldFocusNode?.dispose();
     textController?.dispose();
+
+    switchhModels1.dispose();
+    switchhModels2.dispose();
   }
 }

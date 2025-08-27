@@ -1,8 +1,8 @@
 import '/backend/supabase/supabase.dart';
-import '/components/add_balance_dialog_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/add_balance_dialog/add_balance_dialog_widget.dart';
 import 'dart:ui';
 import '/index.dart';
 import 'wallet_widget.dart' show WalletWidget;
