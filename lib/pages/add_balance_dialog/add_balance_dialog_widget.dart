@@ -129,7 +129,7 @@ class _AddBalanceDialogWidgetState extends State<AddBalanceDialogWidget> {
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                context.pushNamed(WalletWidget.routeName);
+                                context.safePop();
                               },
                               child: Icon(
                                 Icons.arrow_back,
@@ -145,7 +145,9 @@ class _AddBalanceDialogWidgetState extends State<AddBalanceDialogWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 40.0, 0.0, 20.0),
                           child: Text(
-                            'ادخل المبلغ',
+                            FFLocalizations.of(context).getText(
+                              '5a4ldjsx' /* ادخل المبلغ */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -196,7 +198,9 @@ class _AddBalanceDialogWidgetState extends State<AddBalanceDialogWidget> {
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                              hintText: 'القيمة',
+                              hintText: FFLocalizations.of(context).getText(
+                                'udbw02vd' /* القيمة */,
+                              ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
@@ -298,12 +302,29 @@ class _AddBalanceDialogWidgetState extends State<AddBalanceDialogWidget> {
                               await TransactionTable().insert({
                                 'amount':
                                     int.tryParse(_model.textController.text),
-                                'id': materialDialog3WalletsRow?.userId,
+                                'user_id': widget!.userId,
                               });
+                              await UsersTable().update(
+                                data: {
+                                  'balance': valueOrDefault<String>(
+                                    (materialDialog3WalletsRow!.balance +
+                                            double.parse(
+                                                _model.textController.text))
+                                        .toString(),
+                                    '1',
+                                  ),
+                                },
+                                matchingRows: (rows) => rows.eqOrNull(
+                                  'id',
+                                  widget!.userId,
+                                ),
+                              );
 
                               context.pushNamed(WalletWidget.routeName);
                             },
-                            text: 'اشحن',
+                            text: FFLocalizations.of(context).getText(
+                              '1rlcs927' /* اشحن */,
+                            ),
                             options: FFButtonOptions(
                               width: MediaQuery.sizeOf(context).width * 0.195,
                               height: MediaQuery.sizeOf(context).height * 0.06,
