@@ -46,4 +46,7 @@ class UsersRow extends SupabaseDataRow {
 
   String? get phonNumber => getField<String>('phon_number');
   set phonNumber(String? value) => setField<String>('phon_number', value);
+
+  String? get balance => getField<String>('balance');
+  set balance(String? value) => setField<String>('balance', value);
 }

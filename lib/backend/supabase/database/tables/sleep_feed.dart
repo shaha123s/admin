@@ -17,9 +17,6 @@ class SleepFeedRow extends SupabaseDataRow {
   String get id => getField<String>('id')!;
   set id(String value) => setField<String>('id', value);
 
-  String get childId => getField<String>('child_id')!;
-  set childId(String value) => setField<String>('child_id', value);
-
   DateTime get recordDate => getField<DateTime>('record_date')!;
   set recordDate(DateTime value) => setField<DateTime>('record_date', value);
 
@@ -39,4 +36,7 @@ class SleepFeedRow extends SupabaseDataRow {
 
   DateTime get createdAt => getField<DateTime>('created_at')!;
   set createdAt(DateTime value) => setField<DateTime>('created_at', value);
+
+  String? get motherId => getField<String>('mother_id');
+  set motherId(String? value) => setField<String>('mother_id', value);
 }

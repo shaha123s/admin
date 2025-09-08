@@ -19,12 +19,6 @@ class PregnancyfatherVideosRow extends SupabaseDataRow {
   int get id => getField<int>('id')!;
   set id(int value) => setField<int>('id', value);
 
-  int get weekNo => getField<int>('week_no')!;
-  set weekNo(int value) => setField<int>('week_no', value);
-
-  String get category => getField<String>('category')!;
-  set category(String value) => setField<String>('category', value);
-
   String get title => getField<String>('title')!;
   set title(String value) => setField<String>('title', value);
 

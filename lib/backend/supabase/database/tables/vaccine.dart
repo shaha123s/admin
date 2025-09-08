@@ -44,4 +44,22 @@ class VaccineRow extends SupabaseDataRow {
   String? get preventiveMeasures => getField<String>('Preventive_Measures');
   set preventiveMeasures(String? value) =>
       setField<String>('Preventive_Measures', value);
+
+  String? get vaccineNameEn => getField<String>('vaccine_name_en');
+  set vaccineNameEn(String? value) =>
+      setField<String>('vaccine_name_en', value);
+
+  String? get notesEn => getField<String>('notes_en');
+  set notesEn(String? value) => setField<String>('notes_en', value);
+
+  String? get ageEn => getField<String>('age_en');
+  set ageEn(String? value) => setField<String>('age_en', value);
+
+  String? get sideEffectEn => getField<String>('side_effect_en');
+  set sideEffectEn(String? value) => setField<String>('side_effect_en', value);
+
+  String? get preventiveMeasuresEn =>
+      getField<String>('preventive_measures_en');
+  set preventiveMeasuresEn(String? value) =>
+      setField<String>('preventive_measures_en', value);
 }

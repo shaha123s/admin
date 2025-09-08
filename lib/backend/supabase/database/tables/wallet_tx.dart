@@ -17,15 +17,15 @@ class WalletTxRow extends SupabaseDataRow {
   String get id => getField<String>('id')!;
   set id(String value) => setField<String>('id', value);
 
-  String? get walletId => getField<String>('wallet_id');
-  set walletId(String? value) => setField<String>('wallet_id', value);
+  String? get userId => getField<String>('user_id');
+  set userId(String? value) => setField<String>('user_id', value);
 
-  double get amount => getField<double>('amount')!;
-  set amount(double value) => setField<double>('amount', value);
+  double? get amount => getField<double>('amount');
+  set amount(double? value) => setField<double>('amount', value);
 
   List<String> get service => getListField<String>('service');
   set service(List<String>? value) => setListField<String>('service', value);
 
-  DateTime get txTime => getField<DateTime>('tx_time')!;
-  set txTime(DateTime value) => setField<DateTime>('tx_time', value);
+  String? get walletId => getField<String>('wallet_id');
+  set walletId(String? value) => setField<String>('wallet_id', value);
 }
