@@ -113,7 +113,7 @@ class _TransWidgetState extends State<TransWidget> {
                                     0.0, 30.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'xgesou3q' /* BloomBelly */,
+                                    '6b88kyfo' /* BloomBelly */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -137,7 +137,7 @@ class _TransWidgetState extends State<TransWidget> {
                                       context.pushNamed(HomeWidget.routeName);
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'rywjgwz7' /* الرئيسية */,
+                                      'drd1aj7p' /* الرئيسية */,
                                     ),
                                     icon: Icon(
                                       Icons.home_rounded,
@@ -196,7 +196,7 @@ class _TransWidgetState extends State<TransWidget> {
                                         UsermangmentWidget.routeName);
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    'k2hv0fkv' /* إدارة المستخدمين */,
+                                    'aa1lld8e' /* إدارة المستخدمين */,
                                   ),
                                   icon: Icon(
                                     Icons.person_add_alt,
@@ -251,7 +251,7 @@ class _TransWidgetState extends State<TransWidget> {
                                     context.pushNamed(WalletWidget.routeName);
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    'kefqaeo1' /* المحفظة */,
+                                    'kobwzn1i' /* المحفظة */,
                                   ),
                                   icon: Icon(
                                     Icons.wallet,
@@ -490,7 +490,7 @@ class _TransWidgetState extends State<TransWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                      'u43xanrf' /* ابحث */,
+                                                      'mv0s78hd' /* ابحث */,
                                                     ),
                                                     hintStyle: FlutterFlowTheme
                                                             .of(context)
@@ -718,7 +718,7 @@ class _TransWidgetState extends State<TransWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'fg0vyw8e' /* اسم المستخدم */,
+                                                              'lclh5j02' /* اسم المستخدم */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)

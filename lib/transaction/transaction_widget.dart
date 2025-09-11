@@ -1,10 +1,12 @@
 import '/backend/supabase/supabase.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import '/index.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -124,7 +126,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                       0.0, 30.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '5aq4x3zv' /* BloomBelly */,
+                                      'ask9eg3h' /* BloomBelly */,
                                     ),
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
@@ -197,7 +199,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                         context.pushNamed(HomeWidget.routeName);
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'wzkupd4u' /* الرئيسية */,
+                                        'e1jrgsav' /* الرئيسية */,
                                       ),
                                       icon: Icon(
                                         Icons.home_rounded,
@@ -259,7 +261,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                           UsermangmentWidget.routeName);
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'mkhhym9g' /* إدارة المستخدمين */,
+                                      'd09cir1q' /* إدارة المستخدمين */,
                                     ),
                                     icon: Icon(
                                       Icons.person_add_alt,
@@ -318,7 +320,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                       context.pushNamed(WalletWidget.routeName);
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'tpglxps4' /* المحفظة */,
+                                      'v6jxakuh' /* المحفظة */,
                                     ),
                                     icon: Icon(
                                       Icons.wallet,
@@ -391,7 +393,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                           0.0, 20.0, 40.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'fj41h67a' /* transactions */,
+                                          'ordh9rdw' /* transfer */,
                                         ),
                                         textAlign: TextAlign.start,
                                         style: FlutterFlowTheme.of(context)
@@ -592,7 +594,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                               child: Padding(
                                                                 padding: EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        20.0,
+                                                                        0.0,
                                                                         30.0,
                                                                         0.0,
                                                                         20.0),
@@ -614,7 +616,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                                           Text(
                                                                         FFLocalizations.of(context)
                                                                             .getText(
-                                                                          'v2u8m351' /* المبلغ المحول */,
+                                                                          '3nb53n1t' /* المبلغ المحول */,
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
@@ -626,27 +628,45 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                                             ),
                                                                       ),
                                                                     ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          30.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Text(
-                                                                        FFLocalizations.of(context)
-                                                                            .getText(
-                                                                          'a6b29glb' /* التاريخ */,
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              fontFamily: 'Mirza',
-                                                                              color: Color(0xFFA09FB9),
-                                                                              fontSize: 25.0,
-                                                                              letterSpacing: 0.0,
-                                                                            ),
+                                                                    Text(
+                                                                      FFLocalizations.of(
+                                                                              context)
+                                                                          .getText(
+                                                                        'ah4kpeuo' /* التاريخ */,
                                                                       ),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Mirza',
+                                                                            color:
+                                                                                Color(0xFFA09FB9),
+                                                                            fontSize:
+                                                                                25.0,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                          ),
+                                                                    ),
+                                                                    Text(
+                                                                      FFLocalizations.of(
+                                                                              context)
+                                                                          .getText(
+                                                                        '7ts3vvkp' /* تعديل */,
+                                                                      ),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Mirza',
+                                                                            color:
+                                                                                Color(0xFFA09FB9),
+                                                                            fontSize:
+                                                                                25.0,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                          ),
                                                                     ),
                                                                   ],
                                                                 ),
@@ -660,16 +680,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                                 FutureBuilder<
                                                                     List<
                                                                         TransactionRow>>(
-                                                                  future: TransactionTable()
-                                                                      .queryRows(
-                                                                    queryFn: (q) => q
-                                                                        .eqOrNull(
-                                                                          'user_id',
-                                                                          widget!
-                                                                              .userID,
-                                                                        )
-                                                                        .order('created_at'),
-                                                                  ),
+                                                                  future: (_model.requestCompleter ??= Completer<
+                                                                          List<
+                                                                              TransactionRow>>()
+                                                                        ..complete(
+                                                                            TransactionTable().queryRows(
+                                                                          queryFn: (q) => q
+                                                                              .eqOrNull(
+                                                                                'user_id',
+                                                                                widget!.userID,
+                                                                              )
+                                                                              .order('created_at'),
+                                                                        )))
+                                                                      .future,
                                                                   builder: (context,
                                                                       snapshot) {
                                                                     // Customize what your widget looks like when it's loading.
@@ -718,7 +741,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                                             listViewTransactionRowList[listViewIndex];
                                                                         return Padding(
                                                                           padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              20.0,
+                                                                              0.0,
                                                                               10.0,
                                                                               0.0,
                                                                               20.0),
@@ -774,6 +797,84 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                                                           fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                   ),
+                                                                                ),
+                                                                              ),
+                                                                              Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                                                                                child: FlutterFlowIconButton(
+                                                                                  borderRadius: 8.0,
+                                                                                  buttonSize: 40.0,
+                                                                                  fillColor: FlutterFlowTheme.of(context).primary,
+                                                                                  icon: Icon(
+                                                                                    Icons.delete,
+                                                                                    color: FlutterFlowTheme.of(context).info,
+                                                                                    size: 24.0,
+                                                                                  ),
+                                                                                  onPressed: () async {
+                                                                                    _model.brow = await WalletsTable().queryRows(
+                                                                                      queryFn: (q) => q.eqOrNull(
+                                                                                        'user_id',
+                                                                                        widget!.userID,
+                                                                                      ),
+                                                                                    );
+                                                                                    await WalletsTable().update(
+                                                                                      data: {
+                                                                                        'balance': valueOrDefault<double>(
+                                                                                          valueOrDefault<double>(
+                                                                                                _model.brow?.firstOrNull?.balance,
+                                                                                                0.0,
+                                                                                              ) -
+                                                                                              valueOrDefault<double>(
+                                                                                                listViewTransactionRow.amount?.toDouble(),
+                                                                                                0.0,
+                                                                                              ),
+                                                                                          0.0,
+                                                                                        ),
+                                                                                      },
+                                                                                      matchingRows: (rows) => rows.eqOrNull(
+                                                                                        'user_id',
+                                                                                        widget!.userID,
+                                                                                      ),
+                                                                                    );
+                                                                                    await UsersTable().update(
+                                                                                      data: {
+                                                                                        'balance': valueOrDefault<String>(
+                                                                                          (valueOrDefault<double>(
+                                                                                                    _model.brow?.firstOrNull?.balance,
+                                                                                                    0.0,
+                                                                                                  ) -
+                                                                                                  valueOrDefault<double>(
+                                                                                                    listViewTransactionRow.amount?.toDouble(),
+                                                                                                    0.0,
+                                                                                                  ))
+                                                                                              .toString(),
+                                                                                          '0',
+                                                                                        ),
+                                                                                      },
+                                                                                      matchingRows: (rows) => rows.eqOrNull(
+                                                                                        'id',
+                                                                                        widget!.userID,
+                                                                                      ),
+                                                                                    );
+                                                                                    await TransactionTable().delete(
+                                                                                      matchingRows: (rows) => rows.eqOrNull(
+                                                                                        'transid',
+                                                                                        listViewTransactionRow.transid,
+                                                                                      ),
+                                                                                    );
+                                                                                    safeSetState(() => _model.requestCompleter = null);
+                                                                                    await _model.waitForRequestCompleted();
+                                                                                    await TransactionTable().delete(
+                                                                                      matchingRows: (rows) => rows.eqOrNull(
+                                                                                        'transid',
+                                                                                        listViewTransactionRow.transid,
+                                                                                      ),
+                                                                                    );
+                                                                                    safeSetState(() => _model.requestCompleter = null);
+                                                                                    await _model.waitForRequestCompleted();
+
+                                                                                    safeSetState(() {});
+                                                                                  },
                                                                                 ),
                                                                               ),
                                                                             ].divide(SizedBox(width: 10.0)),

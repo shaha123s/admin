@@ -89,7 +89,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 0.0, 30.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'bbqvwopn' /* BloomBelly */,
+                                'x76o9zo9' /* BloomBelly */,
                               ),
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context)
@@ -154,7 +154,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   context.pushNamed(HomeWidget.routeName);
                                 },
                                 text: FFLocalizations.of(context).getText(
-                                  'fne3krsn' /* الرئيسية */,
+                                  'ay8mlkvw' /* الرئيسية */,
                                 ),
                                 icon: Icon(
                                   Icons.home_rounded,
@@ -208,7 +208,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 context.pushNamed(UsermangmentWidget.routeName);
                               },
                               text: FFLocalizations.of(context).getText(
-                                '96ks2b4o' /* إدارة المستخدمين */,
+                                'dukkp0vx' /* إدارة المستخدمين */,
                               ),
                               icon: Icon(
                                 Icons.person_add_alt,
@@ -258,7 +258,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 context.pushNamed(WalletWidget.routeName);
                               },
                               text: FFLocalizations.of(context).getText(
-                                'n9t1w0px' /* المحفظة */,
+                                '3xq4wzr6' /* المحفظة */,
                               ),
                               icon: Icon(
                                 Icons.wallet,
@@ -590,7 +590,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 hintText:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  'g4ad2jjy' /* ابحث */,
+                                                  'jbxma4tp' /* ابحث */,
                                                 ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
@@ -715,7 +715,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 0.6,
                                   height:
-                                      MediaQuery.sizeOf(context).height * 0.1,
+                                      MediaQuery.sizeOf(context).height * 0.148,
                                   decoration: BoxDecoration(
                                     color: Color(0xB3D6D9E2),
                                     borderRadius: BorderRadius.only(
@@ -731,19 +731,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   ),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 30.0, 10.0, 20.0),
+                                        0.0, 30.0, 0.0, 20.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.spaceAround,
                                       children: [
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  30.0, 0.0, 40.0, 0.0),
+                                                  20.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'ucugc69s' /* الاسم كامل */,
+                                              '97axu2eu' /* الاسم كامل */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -755,13 +755,45 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                           ),
                                         ),
+                                        Text(
+                                          FFLocalizations.of(context).getText(
+                                            'lb0wr27t' /* البريد
+ الإلكتروني */
+                                            ,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Mirza',
+                                                color: Color(0xFFA09FB9),
+                                                fontSize: 25.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                        Text(
+                                          FFLocalizations.of(context).getText(
+                                            '27rmx7h7' /* كلمة 
+المرور */
+                                            ,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Mirza',
+                                                color: Color(0xFFA09FB9),
+                                                fontSize: 25.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  30.0, 0.0, 0.0, 0.0),
+                                                  0.0, 0.0, 40.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'zx4iixxk' /* البريد الإلكتروني */,
+                                              'kg1qxzib' /* الدور */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -773,59 +805,18 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                           ),
                                         ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  40.0, 0.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'ndxtdnp2' /* كلمة المرور */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Mirza',
-                                                  color: Color(0xFFA09FB9),
-                                                  fontSize: 25.0,
-                                                  letterSpacing: 0.0,
-                                                ),
+                                        Text(
+                                          FFLocalizations.of(context).getText(
+                                            'dkkwf12n' /* تاريخ الحمل */,
                                           ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  30.0, 0.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'f5yi4qs6' /* الدور */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Mirza',
-                                                  color: Color(0xFFA09FB9),
-                                                  fontSize: 25.0,
-                                                  letterSpacing: 0.0,
-                                                ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  30.0, 0.0, 20.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              '9wh0nij3' /* تاريخ الحمل */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Mirza',
-                                                  color: Color(0xFFA09FB9),
-                                                  fontSize: 25.0,
-                                                  letterSpacing: 0.0,
-                                                ),
-                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Mirza',
+                                                color: Color(0xFFA09FB9),
+                                                fontSize: 25.0,
+                                                letterSpacing: 0.0,
+                                              ),
                                         ),
                                       ],
                                     ),
@@ -964,7 +955,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         .min,
                                                                 mainAxisAlignment:
                                                                     MainAxisAlignment
-                                                                        .spaceBetween,
+                                                                        .spaceAround,
                                                                 crossAxisAlignment:
                                                                     CrossAxisAlignment
                                                                         .center,
@@ -977,29 +968,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                               0.0,
                                                                               0.0),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            10.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Text(
-                                                                          listViewUsersRow
-                                                                              .fullName,
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                font: GoogleFonts.inter(
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                                color: Color(0xFF5E3E7E),
-                                                                                letterSpacing: 0.0,
+                                                                          Text(
+                                                                        listViewUsersRow
+                                                                            .fullName,
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
                                                                                 fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
-                                                                        ),
+                                                                              color: Color(0xFF5E3E7E),
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                       ),
                                                                     ),
                                                                   ),
@@ -1015,7 +998,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
-                                                                            10.0,
+                                                                            30.0,
                                                                             0.0),
                                                                         child:
                                                                             Text(
@@ -1052,7 +1035,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
-                                                                            60.0,
+                                                                            40.0,
                                                                             0.0),
                                                                         child:
                                                                             Text(
@@ -1085,7 +1068,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
-                                                                            10.0,
+                                                                            40.0,
                                                                             0.0),
                                                                         child:
                                                                             Text(
@@ -1140,9 +1123,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       ),
                                                                     ),
                                                                   ),
-                                                                ].divide(SizedBox(
-                                                                    width:
-                                                                        8.0)),
+                                                                ],
                                                               ),
                                                             ),
                                                           );
@@ -1246,7 +1227,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         .min,
                                                                 mainAxisAlignment:
                                                                     MainAxisAlignment
-                                                                        .spaceBetween,
+                                                                        .spaceAround,
                                                                 crossAxisAlignment:
                                                                     CrossAxisAlignment
                                                                         .center,
@@ -1259,29 +1240,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                               0.0,
                                                                               0.0),
                                                                       child:
-                                                                          Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            10.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Text(
-                                                                          listViewUsersRow
-                                                                              .fullName,
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                font: GoogleFonts.inter(
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                                color: Color(0xFF5E3E7E),
-                                                                                letterSpacing: 0.0,
+                                                                          Text(
+                                                                        listViewUsersRow
+                                                                            .fullName,
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
                                                                                 fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
-                                                                        ),
+                                                                              color: Color(0xFF5E3E7E),
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                       ),
                                                                     ),
                                                                   ),
@@ -1297,7 +1270,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
-                                                                            10.0,
+                                                                            30.0,
                                                                             0.0),
                                                                         child:
                                                                             Text(
@@ -1334,7 +1307,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
-                                                                            60.0,
+                                                                            40.0,
                                                                             0.0),
                                                                         child:
                                                                             Text(
@@ -1367,7 +1340,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
-                                                                            10.0,
+                                                                            40.0,
                                                                             0.0),
                                                                         child:
                                                                             Text(
@@ -1422,9 +1395,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                       ),
                                                                     ),
                                                                   ),
-                                                                ].divide(SizedBox(
-                                                                    width:
-                                                                        8.0)),
+                                                                ],
                                                               ),
                                                             ),
                                                           );

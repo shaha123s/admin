@@ -78,7 +78,7 @@ class _SwitchhWidgetState extends State<SwitchhWidget> {
           safeSetState(() {});
         }
       },
-      activeColor: Color(0xFF0C854F),
+      activeColor: Color(0xFF73CAA3),
       activeTrackColor: FlutterFlowTheme.of(context).primary,
       inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
       inactiveThumbColor: FlutterFlowTheme.of(context).secondaryBackground,

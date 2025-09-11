@@ -1,5 +1,6 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
+import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -8,6 +9,7 @@ import '/index.dart';
 import 'adduserr_widget.dart' show AdduserrWidget;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:provider/provider.dart';
 
 class AdduserrModel extends FlutterFlowModel<AdduserrWidget> {
@@ -40,7 +42,10 @@ class AdduserrModel extends FlutterFlowModel<AdduserrWidget> {
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode2;
   TextEditingController? textController3;
+  late MaskTextInputFormatter textFieldMask2;
   String? Function(BuildContext, String?)? textController3Validator;
+  // Stores action output result for [Backend Call - Insert Row] action in Button widget.
+  UsersRow? usrRow;
 
   @override
   void initState(BuildContext context) {

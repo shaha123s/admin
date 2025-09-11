@@ -84,29 +84,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : HomePageWidget(),
+          appStateNotifier.loggedIn ? HomeWidget() : WalletWidget(),
       routes: [
         FFRoute(
-          name: HomePageWidget.routeName,
-          path: HomePageWidget.routePath,
-          builder: (context, params) => HomePageWidget(),
+          name: '_initialize',
+          path: '/',
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? HomeWidget() : WalletWidget(),
+        ),
+        FFRoute(
+          name: UsermangmentWidget.routeName,
+          path: UsermangmentWidget.routePath,
+          builder: (context, params) => UsermangmentWidget(),
+        ),
+        FFRoute(
+          name: WalletWidget.routeName,
+          path: WalletWidget.routePath,
+          builder: (context, params) => WalletWidget(),
         ),
         FFRoute(
           name: AdduserrWidget.routeName,
           path: AdduserrWidget.routePath,
           builder: (context, params) => AdduserrWidget(),
-        ),
-        FFRoute(
-          name: UsersmanagWidget.routeName,
-          path: UsersmanagWidget.routePath,
-          builder: (context, params) => UsersmanagWidget(),
-        ),
-        FFRoute(
-          name: WalletWidget.routeName,
-          path: WalletWidget.routePath,
-          builder: (context, params) => WalletWidget(
-            userid: params.getParam<String>('heightRowId', ParamType.String),
-          ),
         ),
         FFRoute(
           name: ProfileWidget.routeName,
@@ -122,6 +121,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: TransWidget.routeName,
           path: TransWidget.routePath,
           builder: (context, params) => TransWidget(),
+        ),
+        FFRoute(
+          name: HomeWidget.routeName,
+          path: HomeWidget.routePath,
+          builder: (context, params) => HomeWidget(),
+        ),
+        FFRoute(
+          name: TransactionWidget.routeName,
+          path: TransactionWidget.routePath,
+          builder: (context, params) => TransactionWidget(
+            userID: params.getParam(
+              'userID',
+              ParamType.String,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -290,7 +304,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/homePage';
+            return '/wallet';
           }
           return null;
         },

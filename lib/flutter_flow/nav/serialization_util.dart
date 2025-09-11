@@ -208,6 +208,8 @@ dynamic deserializeParam<T>(
         switch (T) {
           case WeeklyTemplatesRow:
             return WeeklyTemplatesRow(data);
+          case VUsersBalanceRow:
+            return VUsersBalanceRow(data);
           case UsersRow:
             return UsersRow(data);
           case CareGuidesRow:
@@ -216,26 +218,46 @@ dynamic deserializeParam<T>(
             return FetalMovesRow(data);
           case MwcRow:
             return MwcRow(data);
+          case VideoLinksPregnantWithChildRow:
+            return VideoLinksPregnantWithChildRow(data);
+          case VaccineRow:
+            return VaccineRow(data);
+          case PregnancyWightRow:
+            return PregnancyWightRow(data);
           case MedicalTestsRow:
             return MedicalTestsRow(data);
           case PregnanciesRow:
             return PregnanciesRow(data);
+          case UserTasksRow:
+            return UserTasksRow(data);
           case ChildrenRow:
             return ChildrenRow(data);
+          case PregnancyfatherVideosRow:
+            return PregnancyfatherVideosRow(data);
+          case VideoLinksPregnantOnlyRow:
+            return VideoLinksPregnantOnlyRow(data);
           case WalletTxRow:
             return WalletTxRow(data);
+          case TodoSuggestionsRow:
+            return TodoSuggestionsRow(data);
           case SleepFeedRow:
             return SleepFeedRow(data);
           case NutritionRow:
             return NutritionRow(data);
           case WalletsRow:
             return WalletsRow(data);
+          case TransactionRow:
+            return TransactionRow(data);
           case DevTipsRow:
             return DevTipsRow(data);
           case WeeklyFatherGuidanceRow:
             return WeeklyFatherGuidanceRow(data);
+          case VTransactionWithUserRow:
+            return VTransactionWithUserRow(data);
           case GrowthRow:
             return GrowthRow(data);
+          case PregnancyJournalRow:
+            return PregnancyJournalRow(data);
           case ManagersRow:
             return ManagersRow(data);
           default:
